@@ -74,11 +74,17 @@ For example:
 area5518-002.mp3|37|jp|どうしたの？　ポスターじっと見て
 ```
 
+### `interactive_extractor.py`
+This interactive tool fetches all available character IDs from Bestdori and allows you to choose between:
+1. **Cloud Mode**: Download only the necessary voice files for a specific character.
+2. **Local Mode**: Extract voices using already downloaded files in `assets` and `voices` folders.
+
+Note:
+- All `.asset` files are still required to be downloaded for mapping.
+- Downloading voices, even for a single character, can still take a significant amount of time depending on the character's line count.
+
 ## Contributing
 Pull requests are welcome.
-
-### Planned Features
-- As for now you have to download all voice files from Bestdori before specifying the character ID to merge. It would be nice to have a feature to **download voice files of a certain character only**.
 
 ## License
 [MIT](LICENSE)
