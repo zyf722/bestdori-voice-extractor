@@ -20,9 +20,3 @@ if __name__ == "__main__":
     # Step 4: Analyze voices
     voice_analyzer = VoiceAnalyzer()
     voice_analyzer.run("voices", "voice.json")
-
-    # Step 5: Merge assets and voices
-    # Take MyGO!!!!! as an example
-    for i in range(36, 41):
-        asset_merger = AssetMerger(str(i), "asset.json", "voice.json")
-        asset_merger.merge()
